@@ -414,6 +414,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   gap: 3vw;
+  margin: 3vw 0;
 }
 
 .mycl-flex-item > h1 {
@@ -499,6 +500,8 @@ nav {
   width: 15vw;
 }
 
+/* Project Section CSS */
+
 .mycl-project-section {
   width: 90vw;
   margin: 0 auto;
@@ -513,5 +516,127 @@ nav {
   color: #64e3ff;
   font-size: 3.3vw;
   margin: 3vw auto;
+  position: relative;
   align-self: center;
 }
+
+.mycl-project-section > h2 {
+  color: #64e3ff;
+  font-size: 3vw;
+  margin-left: 4vw;
+}
+
+.mycl-project-section > h1::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0.2vw;
+  background-color: #64e3ff;
+  transition: width 0.3s;
+  bottom: -0.2vw;
+  left: 0;
+}
+
+.mycl-project-section > h1:hover::after {
+  width: 100%;
+}
+
+.mycl-project-section > h1::selection {
+  background-color: #64e3ff;
+  color: #29262e;
+}
+
+.mycl-projects-flex {
+  display: flex;
+  gap: 3vw;
+  justify-content: space-evenly;
+  padding: 3vw;
+}
+
+.mycl-projects-flex-card {
+  padding: 1vw;
+  box-shadow: 0 0 0.2vw rgba(29, 26, 22, 0.3);
+  transform: skew(15deg);
+  width: 20vw;
+  overflow: hidden;
+  transition: 0.3s;
+  border: 2px solid #64e3ff;
+  background-color: #29262e;
+}
+
+.mycl-projects-flex-card-body h5 {
+  color: #64e3ff;
+  font-size: 1.1vw;
+}
+
+.mycl-projects-flex-card-body h5::selection {
+  background-color: #64e3ff;
+  color: #29262e;
+}
+
+.mycl-projects-flex-card-body p {
+  color: #29262e;
+  font-size: 1vw;
+}
+
+.mycl-projects-flex-card:hover {
+  transform: skew(0deg, 0deg);
+}
+
+.mycl-projects-flex-card img {
+  border-radius: 1vw;
+  box-shadow: 0 0 0.2vw rgba(29, 26, 22, 0.3);
+}
+
+.mycl-projects-flex-card-body a {
+  background-color: #29262e;
+  color: #64e3ff;
+  border: none;
+  padding: 0.5vw 1vw;
+  font-weight: 700;
+  border-radius: 0.5vw;
+  font-size: 1.2vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mycl-projects-flex-card-body a:hover {
+  background-color: #29262e;
+  color: #29262e;
+}
+
+.mycl-projects-flex-card-body a::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #64e3ff;
+  bottom: 0;
+  left: -100%;
+  z-index: -1;
+}
+
+.mycl-projects-flex-card-body a:hover::before {
+  width: 100%;
+  left: -50%;
+  transition: 0.5s;
+}
+
+.mycl-projects-flex-card-body a::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #64e3ff;
+  top: 0;
+  right: -100%;
+  z-index: -1;
+}
+
+.mycl-projects-flex-card-body a:hover::after {
+  width: 100%;
+  right: -50%;
+  transition: 0.5s;
+}
+/* font-size: 1vw; */
