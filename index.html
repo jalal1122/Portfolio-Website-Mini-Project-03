@@ -25,10 +25,10 @@
         </a>
       </div>
       <div class="mycl-nav-links-div">
-        <a href="#myid-home-section ">Home</a>
+        <a href="#myid-home-section">Home</a>
         <a href="#myid-bio-section">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#myid-project-section">Projects</a>
+        <a href="#myid-contact-section">Contact</a>
         <button>View My Work</button>
       </div>
     </nav>
@@ -156,7 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="mycl-project-section">
+    <div class="mycl-project-section" id="myid-project-section">
       <h1>PROJECTS</h1>
       <h2>HTML &amp; CSS</h2>
       <div class="mycl-projects-flex">
@@ -216,59 +216,124 @@
       <div class="mycl-projects-flex">
         <div class="card mycl-projects-flex-card">
           <img
-            src="./Images/poket-project.jpg"
+            src="./Images/Library-project.jpg"
             class="card-img-top"
             alt="..."
           />
           <div class="card-body mycl-projects-flex-card-body">
-            <h5 class="card-title">Immigration Firm Website</h5>
+            <h5 class="card-title">Library Management Software</h5>
             <p class="card-text">
-              We bring over 35 years of public practice experience to clients
-              our firm is a family business.
+              Library Management Software is a system that helps manage the
+              catalog of a library. It assists in tracking books issued,
+              returned, and added to the library.
             </p>
             <a
-              href="https://poket-tau.vercel.app/"
+              href="https://github.com/jalal1122/Library-Management-System-Project"
               target="_blank"
               class="btn btn-primary"
-              >Visit Site</a
+              >Visit Repository</a
             >
           </div>
         </div>
         <div class="card mycl-projects-flex-card">
           <img
-            src="./Images/netflix-clone-project.jpg"
+            src="./Images/notepad-project-img.png"
             class="card-img-top"
             alt="..."
           />
           <div class="card-body mycl-projects-flex-card-body">
-            <h5 class="card-title">Netflix Clone Website</h5>
+            <h5 class="card-title">Notepad Text Editor</h5>
             <p class="card-text">
-              Unlimited movies, TV shows, and more Starts at Rs 250. Cancel
-              anytime. Ready to watch?
+              Notepad is a simple text editor included with Windows that allows
+              users to create and edit plain text documents.
             </p>
             <a href="https://poket-tau.vercel.app/" class="btn btn-primary"
-              >Visit Site</a
+              >Visit Repository</a
             >
           </div>
         </div>
         <div class="card mycl-projects-flex-card">
           <img
-            src="./Images/glassmorphirm-project.jpg"
+            src="./Images/calculator-project-img.png"
             class="card-img-top"
             alt="..."
           />
           <div class="card-body mycl-projects-flex-card-body">
-            <h5 class="card-title">Glassmorphism Form Assignment</h5>
+            <h5 class="card-title">Calculator Software</h5>
             <p class="card-text">
-              Glassmorphism is characterized by the use of frosted glass-like
-              elements, creating a semi-transparent, blurred background effect.
+              A calculator is a device or software used to perform arithmetic
+              operations and complex mathematical calculations.
             </p>
             <a href="https://poket-tau.vercel.app/" class="btn btn-primary"
-              >Visit Site</a
-            >sdfasd
+              >Visit Repository</a
+            >
           </div>
         </div>
       </div>
     </div>
+    <div class="mycl-contact-section" id="myid-contact-section">
+      <div class="container">
+        <div class="heading">Contact Us</div>
+        <form
+          class="form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="c541da96-5fd5-45ab-aa88-fe63a616d550"
+          />
+          <div class="input-field">
+            <input
+              required=""
+              autocomplete="off"
+              type="text"
+              name="text"
+              id="username"
+            />
+            <label for="username">Name</label>
+          </div>
+          <div class="input-field">
+            <input
+              required=""
+              autocomplete="off"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <textarea
+              required=""
+              autocomplete="off"
+              name="message"
+              id="message"
+              rows="5"
+            ></textarea>
+            <label for="message">Message</label>
+          </div>
+      
+  
+          <div class="btn-container">
+            <button class="btn mycl-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="mycl-footer-left">
+        MJ DEV STUDIO &copy; 2024
+      </div>
+      <div class="mycl-footer-right">
+        <a href="https://www.linkedin.com/in/mjdevstudio/" target="_blank">
+          <img src="./Images/linkedin-icon.png" alt="">
+        </a>
+        <a href="https://github.com/jalal1122">
+          <img src="./Images/github-icon.png" alt="">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

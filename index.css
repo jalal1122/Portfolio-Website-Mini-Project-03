@@ -586,6 +586,7 @@ nav {
 .mycl-projects-flex-card img {
   border-radius: 1vw;
   box-shadow: 0 0 0.2vw rgba(29, 26, 22, 0.3);
+  height: 50%;
 }
 
 .mycl-projects-flex-card-body a {
@@ -639,4 +640,309 @@ nav {
   right: -50%;
   transition: 0.5s;
 }
-/* font-size: 1vw; */
+
+:root {
+  --dark-green: #628b48;
+  --light-green: #6ab547;
+  --yellow: #edd83d;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* From Uiverse.io by Spacious74 */
+.container {
+  padding: 1vw;
+  /* max-width: 700px;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .heading {
+  font-size: 1.4vw;
+  margin-bottom: 2vw;
+  font-weight: bolder;
+  font-size: 3vw;
+  text-align: left;
+  color: #64e3ff;
+  position: relative;
+}
+
+.container .heading:before{
+  content: "";
+  width: 0;
+  height: 0.2vw;
+  background-color: #64e3ff;
+  position: absolute;
+  bottom: 0.2vw;
+  left: 0;
+
+}
+
+.container .heading:hover::before{
+  width: 100%;
+  transition: 0.4s all;
+}
+
+.form {
+  max-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.form .btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.form .btn {
+  padding: 0.4vw 0.7vw;
+  font-size: 1vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  border-radius: 1vw;
+  border: none;
+  background-color: var(--light-green);
+  color: var(--black);
+  font-weight: bolder;
+  transition: all 0.2s ease;
+}
+
+.form .btn:active {
+  /* box-shadow: inset #29262e, inset var(--black); */
+  transform: scale(0.995);
+}
+.form .btn:hover{
+  /* background-color: #29262e; */
+  color: #64e3ff;
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-field label {
+  position: absolute;
+  color: #8d8d8d;
+  pointer-events: none;
+  background-color: transparent;
+  left: 0.8vw;
+  transform: translateY(0.2vw);
+  transition: all 0.3s ease;
+}
+
+.input-field input {
+  padding: 0.4vw 0.6vw;
+  font-size: 1vw;
+  border-radius: 0.8vw;
+  border: solid 1px #8d8d8d;
+  letter-spacing: 0.1vw;
+  width: 100%;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+  outline: none;
+  border: solid 1px #0034de;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  transform: translateY(-51%) translateX(-0.8vw) scale(0.8);
+  /* background-color: #fff; */
+  padding: 0px 0.2vw;
+  color: #64e3ff;
+  font-weight: bolder;
+  letter-spacing: 0.1vw;
+  border: none;
+  border-radius: 5vw;
+}
+
+.form .passicon {
+  cursor: pointer;
+  font-size: 1.3vw;
+  position: absolute;
+  top: 0.3vw;
+  right: 0.4vw;
+}
+
+.form .close {
+  display: none;
+}
+
+.mycl-btn {
+  width: 100%;
+  background-color: #64e3ff;
+}
+.input-field {
+  position: relative;
+}
+
+.input-field label {
+  position: absolute;
+  color: #8d8d8d;
+  pointer-events: none;
+  background-color: transparent;
+  left: 1vw;
+  transform: translateY(0.6vw);
+  transition: all 0.3s ease;
+}
+
+.input-field input,
+.input-field textarea {
+  padding: 0.7vw 0.8vw;
+  font-size: 1vw;
+  border-radius: 1vw;
+  border: solid 1px #8d8d8d;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.input-field textarea {
+  resize: vertical; /* Allows resizing vertically only */
+  min-height: 10vw;
+}
+
+.input-field input:focus,
+.input-field input:valid,
+.input-field textarea:focus,
+.input-field textarea:valid {
+  outline: none;
+  border: solid 1px #0034de;
+}
+
+.input-field label {
+  position: absolute;
+  color: #8d8d8d;
+  pointer-events: none;
+  background-color: transparent;
+  left: 0.7vw;
+  transform: translateY(0.7vw);
+  transition: all 0.3s ease;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label,
+.input-field textarea:focus ~ label,
+.input-field textarea:valid ~ label {
+  transform: translateY(-91%) translateX(-1vw) scale(0.8);
+  /* background-color: #fff; */
+  padding: 0px 5px;
+  color: #64e3ff;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 100px;
+}
+
+.form .btn {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border: none;
+  background-color: #64e3ff;
+  color: #29262e;
+  font-weight: 900;
+  transition: all 0.2s ease;
+}
+
+
+.form .btn {
+  background-color: #64e3ff;
+  color: #29262e;
+  border: none;
+  padding: 0.5vw 1vw;
+  font-weight: 900;
+  font-size: 1.5vw;
+  border-radius: 0.5vw;
+  margin-top: 1.6vw;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.form .btn::selection {
+  color: #64e3ff;
+  background-color: #29262e;
+}
+
+.form .btn:hover {
+  color: #64e3ff;
+  background-color: #64e3ff;
+}
+
+.form .btn::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  bottom: 0;
+  left: -100%;
+  z-index: -1;
+}
+
+.form .btn:hover::before {
+  width: 100%;
+  left: -50%;
+  transition: 0.5s;
+}
+
+.form .btn::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  right: -100%;
+  z-index: -1;
+}
+
+.form .btn:hover::after {
+  width: 100%;
+  right: -50%;
+  transition: 0.5s;
+}
+
+
+.mycl-contact-section{
+  width: 90vw;
+  background-color: #29262e;
+  border-radius: 2vw;
+  margin: 5vw auto;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #29262e;
+  color: white;
+  align-items: center;
+  padding: 1vw 0;
+  width: 90vw;
+  margin: 5vw auto 0 auto;
+  border-radius: 2vw;
+}
+
+footer .mycl-footer-right{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img{
+  width: 3vw;
+  height: 3vw;
+  margin-right: 1vw;
+}
+
+footer a:hover{
+  transform: scale(1.2);
+}
