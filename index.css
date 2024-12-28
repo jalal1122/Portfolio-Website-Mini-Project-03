@@ -172,6 +172,10 @@ nav {
   margin-bottom: 1vw;
 }
 
+.mycl-hero-section-text h1:hover nav{
+  display: none;
+}
+
 .mycl-hero-section-text h1::selection {
   background-color: #64e3ff;
   color: #29262e;
@@ -413,6 +417,7 @@ nav {
 .mycl-skills-flex {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 3vw;
   margin: 3vw 0;
 }
@@ -487,7 +492,7 @@ nav {
 }
 
 .mycl-flex-item > img {
-  width: 3vw;
+  width: 6vw;
   height: auto;
 }
 
@@ -497,7 +502,7 @@ nav {
 }
 
 .mycl-html-featured-images > img {
-  width: 15vw;
+  width: 30vw;
 }
 
 /* Project Section CSS */
@@ -687,7 +692,7 @@ nav {
 }
 
 .form {
-  max-width: 30vw;
+  max-width: 50vw;
   display: flex;
   flex-direction: column;
   gap: 2vw;
@@ -945,4 +950,182 @@ footer img{
 
 footer a:hover{
   transform: scale(1.2);
+}
+
+/* CSS Media Querries */
+
+@media screen and  (max-width:768px){
+  .mycl-hero-section{
+    flex-direction: column-reverse;
+  }
+
+  .mycl-hero-section-image img{
+    width: 70vw;
+  }
+
+  .mycl-hero-section-text{
+    width: 80vw;
+
+
+  }
+
+  .mycl-hero-section-text > h1{
+    font-size: 6.6vw;
+  }
+
+  .mycl-hero-section-text p {
+    font-size: 3.4vw;
+  }
+
+  .mycl-hero-section-text button{
+    padding: 1vw 2vw;
+    font-size: 3vw;
+    border-radius: 1vw;
+  }
+
+  .mycl-introduction-section-text h1{
+    font-size: 6.6vw;
+  }
+
+  .mycl-introduction-section-text p {
+    font-size: 3.4vw;
+  }
+
+  .mycl-bio-flex{
+    flex-direction: column;
+  }
+
+  .mycl-bio-section > h1{
+    font-size: 6.6vw;
+  }
+
+  .mycl-bio-img-div{
+    width: 80vw;
+  }
+
+  .mycl-bio-img-div img{
+    width: 80vw;
+  }
+
+  .mycl-bio-text-div {
+    width: 80vw;
+  }
+
+  .mycl-bio-text-div p{
+    font-size: 3.4vw;
+  }
+
+  .mycl-skill-section > h1{
+    font-size: 6.6vw;
+  }
+
+  .mycl-flex-item > h1 {
+    font-size: 4vw;
+  }
+
+  .mycl-flex-item > h2{
+    font-size: 2.5vw;
+  }
+  
+  .mycl-flex-item > h3{
+    font-size: 2.6vw;
+    text-align: center;
+  }
+
+  .mycl-flex-item{
+    width: 35vw;
+  }
+
+  .mycl-project-section > h1 {
+    font-size: 6.6vw;
+  }
+
+  .mycl-project-section > h2{
+    font-size: 5vw;
+  }
+
+  .mycl-projects-flex{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+  }
+
+  .mycl-projects-flex-card{
+    width: 30vw;
+  }
+
+  .mycl-projects-flex-card-body h5 {
+    font-size: 2.2vw;
+  }
+
+  .mycl-projects-flex-card-body p{
+    font-size: 2vw;
+  }
+
+  .mycl-projects-flex-card-body a{
+    font-size: 2.2vw;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+  }
+
+  .container .heading{
+    font-size: 2.8vw;
+    font-size: 6vw;
+  }
+
+  .form{
+    max-width: 70vw;
+  }
+
+  .form .btn {
+    padding: 1vw 1.5vw;
+    font-size: 2vw;
+  }
+
+  .input-field input{
+    padding: 1vw 1.4vw;
+    font-size: 2vw;
+    border-radius: 1.6vw;
+  }
+
+  .input-field input:focus ~ label,
+.input-field input:valid ~ label{
+  transform: translateY(-51%) translateX(-1.6vw) scale(0.8);
+  padding: 0px 0.4vw;
+  border-radius: 10vw;
+}
+
+.form .passicon{
+  font-size: 2.6vw;
+}
+
+.input-field input,
+.input-field textarea{
+  padding: 1.4vw 1.6vw;
+  font-size: 2vw;
+  border-radius: 2vw;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label,
+.input-field textarea:focus ~ label,
+.input-field textarea:valid ~ label{
+  transform: translateY(-91%) translateX(-2vw) scale(0.8);
+  padding: 0 10px;
+}
+
+.form .btn {
+  background-color: #64e3ff;
+  color: #29262e;
+  border: none;
+  padding: 1vw 2vw;
+  font-weight: 900;
+  font-size: 3vw;
+  border-radius: 1vw;
+  margin-top: 1.6vw;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
 }
