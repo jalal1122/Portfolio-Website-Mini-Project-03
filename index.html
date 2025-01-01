@@ -19,8 +19,9 @@
     ></script>
   </head>
   <body>
-    <div class="preloader"></div>
+    <div id="preloader">
       <div class="loader"></div>
+    </div>
     <nav class="navbar navbar-expand-md mycl-nav rounded">
       <div class="container-fluid">
         <a class="navbar-brand mycl-nav-logo-div" href="./index.html">
@@ -405,5 +406,10 @@
         </a>
       </div>
     </footer>
+    <script>
+      window.addEventListener("load", () => {
+  document.getElementById("preloader").style.display = "none";
+});
+    </script>
   </body>
 </html>
