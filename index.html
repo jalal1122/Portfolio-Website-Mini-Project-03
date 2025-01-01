@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MJ DEV STUDIO</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -226,7 +227,7 @@
               Unlimited movies, TV shows, and more Starts at Rs 250. Cancel
               anytime. Ready to watch?
             </p>
-            <a href="https://poket-tau.vercel.app/" class="btn btn-primary"
+            <a href="https://mjnetflix.vercel.app/" class="btn btn-primary"
               >Visit Site</a
             >
           </div>
@@ -243,7 +244,7 @@
               Glassmorphism is characterized by the use of frosted glass-like
               elements, creating a semi-transparent, blurred background effect.
             </p>
-            <a href="https://poket-tau.vercel.app/" class="btn btn-primary"
+            <a href="https://mjglassmorphism.vercel.app/" class="btn btn-primary"
               >Visit Site</a
             >
           </div>
@@ -310,54 +311,87 @@
     </div>
     <div class="mycl-contact-section" id="myid-contact-section">
       <div class="container">
-        <div class="heading">Contact Us</div>
-        <form
-          class="form"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="access_key"
-            value="c541da96-5fd5-45ab-aa88-fe63a616d550"
-          />
-          <div class="input-field">
-            <input
-              required=""
-              autocomplete="off"
-              type="text"
-              name="text"
-              id="username"
-            />
-            <label for="username">Name</label>
+        <h1>Contact</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mycl-contact-info">
+              <h2>Get in Touch</h2>
+              <address>
+              <p>
+                I'm currently open to new opportunities and collaborations. Feel
+                free to reach out to me for any queries or project ideas. Let's
+                connect and create something amazing together!
+              </p>
+              <h3><i class="fa-solid fa-user"></i> Muhammad Jalal</h3>
+              <a href="tel:03158670180"><i class="fa-solid fa-phone"></i> 03158670180</a>
+              <a href="mailto:jk4350649@gmail.com"><i class="fa-solid fa-envelope"></i> jk4350649@gmail.com</a>
+               <a href="https://g.co/kgs/1dMUEfA"><i class="fa-solid fa-location-dot"></i> Warsak road peshawar Pakistan</a> 
+                <div class="mycl-contact-info-flex d-flex justify-content-center col-3">
+                  <a href="https://www.linkedin.com/in/mjdevstudio/" target="_blank">
+                    <img src="./Images/linkedin-icon.png" alt="" />
+                  </a>
+                  <a href="https://github.com/jalal1122">
+                    <img src="./Images/github-icon.png" alt="" />
+                  </a>
+                </div>
+              </address>
+            </div>
           </div>
-          <div class="input-field">
-            <input
-              required=""
-              autocomplete="off"
-              type="email"
-              name="email"
-              id="email"
-            />
-            <label for="email">Email</label>
-          </div>
-          <div class="input-field">
-            <textarea
-              required=""
-              autocomplete="off"
-              name="message"
-              id="message"
-              rows="5"
-            ></textarea>
-            <label for="message">Message</label>
-          </div>
+          <div class="col-md-6 ">
+            <div class="mycl-contact-form">
+              <form action="https://api.web3forms.com/submit" method="POST" class="mycl-contact-form-inside">
+                <input type="hidden" name="access_key" value="c541da96-5fd5-45ab-aa88-fe63a616d550">
 
-          <div class="btn-container">
-            <button class="btn mycl-btn">Submit</button>
+                <div class="mycl-name-div">
+                  <input type="text" class="mycl-form-input" name="name" required id="name">
+                  <label for="name" class="mycl-contact-label">Name</label>
+                </div>
+
+                <div class="mycl-email-div">
+                  <input type="email" class="mycl-form-input" name="email" required id="email">
+                  <label for="email" class="mycl-contact-label">Email</label>
+                </div>
+                  
+                <div class="mycl-message-div">
+                  <textarea class="mycl-form-input" name="message" rows="3" required id="message"></textarea>
+                  <label for="message" class="mycl-contact-label">Message</label>
+                </div>
+                  
+                <!-- <div class="mb-5 mycl-contact-form-div">
+                  <input
+                  type="text"
+                  class="form-control mycl-form-input"
+                  id="name"
+                  aria-describedby="emailHelp"
+                  required
+                  />
+                  <label for="name" class="form-label mycl-contact-label">Name</label>
+                </div>
+                <div class="mb-5 mycl-contact-form-div">
+                  <input
+                  type="email"
+                  class="form-control mycl-form-input"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  required
+                  />
+                  <label for="email" class="form-label mycl-contact-label">Email</label>
+                </div>
+                <div class="mb-5 mycl-contact-form-div">
+                  <textarea
+                  class="form-control mycl-form-input"
+                  id="message"
+                  rows="3"
+                  required
+                  ></textarea>
+                  <label for="message" class="form-label mycl-contact-label">Message</label> -->
+                  <button type="submit" class="myclbtn">Submit</button>
+                </form>
+              </div>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
     <footer>
       <div class="mycl-footer-left">MJ DEV STUDIO &copy; 2024</div>
       <div class="mycl-footer-right">
