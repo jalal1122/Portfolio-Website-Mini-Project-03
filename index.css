@@ -1190,3 +1190,54 @@ footer a:hover{
 }
 
 }
+
+@media screen and  (max-width:480px){
+  .mycl-nav{
+    height: 20vw;
+  }
+
+  nav{
+    height: 20vw;
+  }
+
+  .mycl-nav-logo-div{
+    width: 13vw;
+    height: 13vw;
+  }
+
+  .mycl-nav-logo-div img{
+    width: 13vw;
+    height: 13vw;
+  }
+
+  .mycl-nav-links-div{
+  flex-direction: row;
+  width: 40vw;
+  height: 80vw;
+  position: absolute;
+  top: 15vw;
+  right: 20vw;
+  background-color: #29262e; 
+  }
+
+  .mycl-nav-links-div a{
+    font-size: 6vw;
+  }
+
+  .mycl-nav-links-div button{
+    padding: 1.5vw 3vw;
+    font-size: 4vw;
+  }
+
+  .mycl-hero-section{
+    flex-direction: column-reverse;
+  }
+
+  .mycl-hero-section-image img{
+    width: 90vw;
+  }
+
+  .mycl-hero-section-text{
+    width: 90vw;
+  }
+}
