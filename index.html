@@ -408,7 +408,9 @@
     </footer>
     <script>
       window.addEventListener("load", () => {
-  document.getElementById("preloader").style.display = "none";
+  setTimeout(() => {
+    document.getElementById("preloader").style.display = "none";
+  }, 3000); // Adjust the time (in milliseconds) for a longer delay
 });
     </script>
   </body>

@@ -5,26 +5,13 @@
   scroll-behavior: smooth;
 }
 
-@keyframes preloader{
-  0%{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-  }
-  100%{
-    background-color: white;
-    width: 0;
-    height: 0;
-  }
-}
-
 #preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #29262e;
   display: flex;
   justify-content: center;
   align-items: center;
