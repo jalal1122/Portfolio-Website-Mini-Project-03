@@ -1240,4 +1240,9 @@ footer a:hover{
   .mycl-hero-section-text{
     width: 90vw;
   }
+
+  footer img{
+    width: 6vw;
+    height: 6vw;
+  }
 }
