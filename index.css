@@ -20,7 +20,7 @@
   transform: scale(1.1);
 }
 
-nav {
+.mycl-nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,12 +36,35 @@ nav {
   z-index: 5;
 }
 
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  height: 5vw;
+  background-color: #29262e;
+  color: white;
+  margin: 0px auto;
+  padding: 0 2vw;
+  border-radius: 1vw;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.mycl-nav-toggler{
+  background-color: #64e3ff !important;
+}
+
 .mycl-nav-links-div {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 50vw;
   height: 5vw;
+  
+
 }
 
 .mycl-nav-links-div a {
@@ -53,6 +76,7 @@ nav {
 
 .mycl-nav-links-div a:hover {
   transform: scale(1.1);
+  color: #64e3ff;
 }
 
 .mycl-nav-links-div a::after {
@@ -955,6 +979,43 @@ footer a:hover{
 /* CSS Media Querries */
 
 @media screen and  (max-width:768px){
+  .mycl-nav{
+    height: 10vw;
+  }
+
+  nav{
+    height: 10vw;
+  }
+
+  .mycl-nav-logo-div{
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .mycl-nav-logo-div img{
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .mycl-nav-links-div{
+  flex-direction: row;
+  width: 30vw;
+  height: 60vw;
+  position: absolute;
+  top: 8vw;
+  right: 15vw;
+  background-color: #29262e; 
+  }
+
+  .mycl-nav-links-div a{
+    font-size: 4vw;
+  }
+
+  .mycl-nav-links-div button{
+    padding: 1vw 2vw;
+    font-size: 3vw;
+  }
+
   .mycl-hero-section{
     flex-direction: column-reverse;
   }

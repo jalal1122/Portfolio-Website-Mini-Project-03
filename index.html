@@ -18,26 +18,63 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <div class="mycl-nav-logo-div">
-        <a href="./index.html">
-          <img src="./Images/logo.png" alt="" class="img-fluid" />
+    <nav class="navbar navbar-expand-md mycl-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand mycl-nav-logo-div" href="./index.html">
+          <img
+            src="./Images/logo.png"
+            alt="Bootstrap"
+            width="30"
+            height="24"
+            class="img-fluid"
+          />
         </a>
-      </div>
-      <div class="mycl-nav-links-div">
-        <a href="#myid-home-section" class="active">Home</a>
-        <a href="#myid-bio-section">About</a>
-        <a href="#myid-project-section">Projects</a>
-        <a href="#myid-contact-section">Contact</a>
-        <button>View My Work</button>
+        <button
+          class="navbar-toggler mycl-nav-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon mycl-nav-toggler"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 mycl-nav-links-div">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#myid-home-section "
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myid-bio-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myid-project-section">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myid-contact-section">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.github.com/jalal1122"
+                ><button>View My Work</button></a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
+
     <div class="mycl-home-section" id="myid-home-section">
       <div class="mycl-hero-section">
         <div class="mycl-hero-section-text">
           <h1>Hi, I'm Muhammad Jalal</h1>
           <p>Web Dev ,Python Developer &amp; AI Enthusiast</p>
-          <button>View My Work</button>
+          <a href="https://www.github.com/jalal1122"><button>View My Work</button></a>
         </div>
         <div class="mycl-hero-section-image">
           <div class="mycl-brown-tint"></div>
@@ -314,8 +351,7 @@
             ></textarea>
             <label for="message">Message</label>
           </div>
-      
-  
+
           <div class="btn-container">
             <button class="btn mycl-btn">Submit</button>
           </div>
@@ -323,15 +359,13 @@
       </div>
     </div>
     <footer>
-      <div class="mycl-footer-left">
-        MJ DEV STUDIO &copy; 2024
-      </div>
+      <div class="mycl-footer-left">MJ DEV STUDIO &copy; 2024</div>
       <div class="mycl-footer-right">
         <a href="https://www.linkedin.com/in/mjdevstudio/" target="_blank">
-          <img src="./Images/linkedin-icon.png" alt="">
+          <img src="./Images/linkedin-icon.png" alt="" />
         </a>
         <a href="https://github.com/jalal1122">
-          <img src="./Images/github-icon.png" alt="">
+          <img src="./Images/github-icon.png" alt="" />
         </a>
       </div>
     </footer>
